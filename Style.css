@@ -1,225 +1,113 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #2980b9;
+    --text-color: #333333;
+    --light-bg: #f9f9f9;
+    --border-color: #e0e0e0;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varumlakshmi Moorthy - Resume</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #2980b9;
-            --text-color: #333333;
-            --light-bg: #f9f9f9;
-            --border-color: #e0e0e0;
-        }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    margin: 0;
+    padding: 20px;
+}
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--light-bg);
-            margin: 0;
-            padding: 20px;
-        }
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
 
-        .resume-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 40px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            border-radius: 8px;
-        }
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
 
-        header {
-            text-align: center;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
+h1 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+}
 
-        h1 {
-            margin: 0;
-            color: var(--primary-color);
-            font-size: 2.2rem;
-            letter-spacing: 0.5px;
-        }
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin: 8px 0;
+}
 
-        .subtitle {
-            font-size: 1.1rem;
-            color: var(--accent-color);
-            font-weight: 600;
-            margin: 8px 0;
-        }
+.contact-info {
+    font-size: 0.95rem;
+    color: #666;
+}
 
-        .contact-info {
-            font-size: 0.95rem;
-            color: #666;
-        }
+.contact-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
 
-        .contact-info a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
+.contact-info a:hover {
+    text-decoration: underline;
+}
 
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
+section {
+    margin-bottom: 25px;
+}
 
-        section {
-            margin-bottom: 25px;
-        }
+h2 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
 
-        h2 {
-            color: var(--primary-color);
-            font-size: 1.3rem;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
+p {
+    margin: 0 0 10px 0;
+}
 
-        p {
-            margin: 0 0 10px 0;
-        }
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
 
-        ul {
-            margin: 0;
-            padding-left: 20px;
-        }
+li {
+    margin-bottom: 8px;
+}
 
-        li {
-            margin-bottom: 8px;
-        }
+.item-title {
+    font-weight: bold;
+    color: var(--primary-color);
+}
 
-        .item-title {
-            font-weight: bold;
-            color: var(--primary-color);
-        }
+.item-sub {
+    font-style: italic;
+    color: #555;
+    font-size: 0.95rem;
+}
 
-        .item-sub {
-            font-style: italic;
-            color: #555;
-            font-size: 0.95rem;
-        }
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        @media (max-width: 600px) {
-            .resume-container {
-                padding: 20px;
-            }
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="resume-container">
-        
-        <!-- Header Section -->
-        <header>
-            <h1>Varumlakshmi Moorthy</h1>
-            <div class="subtitle">B.E. Computer Science and Engineering</div>
-            <div class="contact-info">
-                Government College of Technology, Coimbatore | 
-                <a href="mailto:varummoorthy@gmail.com">varummoorthy@gmail.com</a> | 
-                <a href="https://www.linkedin.com/public-profile/settings/" target="_blank">LinkedIn Profile</a>
-            </div>
-        </header>
-
-        <!-- Objective Section -->
-        <section>
-            <h2>Objective</h2>
-            <p>Motivated and detail-oriented Computer Science and Engineering undergraduate with a strong foundation in programming, software development, and online learning initiatives. Eager to leverage technical skills in Python, Java, and C to build impactful solutions and contribute to innovative tech projects.</p>
-        </section>
-
-        <!-- Education Section -->
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <span class="item-title">Bachelor of Engineering (B.E.) in Computer Science and Engineering</span><br>
-                    <span class="item-sub">Government College of Technology, Coimbatore (Currently pursuing 2nd year)</span>
-                </li>
-                <li>
-                    <span class="item-title">Diploma in Programming / Data Science & Foundation</span><br>
-                    <span class="item-sub">IIT Madras Online BS Degree Program (Completed Foundation, currently in Diploma Level - Term 2)</span>
-                </li>
-                <li>
-                    <span class="item-title">Higher Secondary School Education</span><br>
-                    <span class="item-sub">Vellalar Matriculation Higher Secondary School, Thindal</span>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Technical Skills Section -->
-        <section>
-            <h2>Technical Skills & Proficiencies</h2>
-            <div class="skills-grid">
-                <div>
-                    <ul>
-                        <li><span class="item-title">Programming Languages:</span> Python, C, Java</li>
-                        <li><span class="item-title">Web Development:</span> HTML</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><span class="item-title">Soft Skills & Productivity:</span> Touch typing (learning), Public Speaking, Soft Skills Development</li>
-                        <li><span class="item-title">Languages Known:</span> Tamil (Fluent), English (Fluent), Hindi (Basic)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section>
-            <h2>Projects & Innovations</h2>
-            <ul>
-                <li>
-                    <span class="item-title">LumiLearn (Android Application)</span>[span_0](start_span)[span_0](end_span)
-                    <ul>
-                        <li>Developed an interactive vocabulary-learning mobile application featuring a 10-card image-based flashcard system[span_1](start_span)[span_1](end_span).</li>
-                        <li>Integrated text-to-speech functionality for word pronunciation and sentence reading to assist users in language acquisition[span_2](start_span)[span_2](end_span).</li>
-                    </ul>
-                </li>
-                <br>
-                <li>
-                    <span class="item-title">Real-Time Earthquake Early Warning & Alarm System</span>
-                    <ul>
-                        <li>Developed a C-based academic project designed to monitor seismic magnitude levels and trigger visual and system alarms for early warning safety.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Certifications Section -->
-        <section>
-            <h2>Certifications & Coursework</h2>
-            <ul>
-                <li>
-                    <span class="item-title">NPTEL / SWAYAM:</span>
-                    <ul>
-                        <li>Completed <strong>Soft Skill Development</strong> (Waiting for results)</li>
-                        <li>Ongoing: <strong>The Joy of Computing using Python</strong></li>
-                        <li>Ongoing: <strong>Public Speaking</strong></li>
-                    </ul>
-                </li>
-                <li>
-                    <span class="item-title">IIT Madras BS Degree:</span> Completed Foundation Level and successfully transitioned through the first term of the Diploma level.
-                </li>
-            </ul>
-        </section>
-
-    </div>
-
-</body>
-</html>
+@media (max-width: 600px) {
+    .resume-container {
+        padding: 20px;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
